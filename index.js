@@ -69,6 +69,7 @@ async function main() {
 
   app.post("/order", async (req, res) => {
     const order = req.body
+
     const plan = await Plan.findOne({
       _id: req.body.planId,
     })
@@ -85,9 +86,9 @@ async function main() {
       total_amount: plan.price,
       currency: "BDT",
       tran_id: main_tran, // use unique tran_id for each api call
-      success_url: `http://localhost:5500/payment/success/${main_tran}`,
-      fail_url: `http://localhost:5500/payment/fail/${main_tran}`,
-      cancel_url: `http://localhost:5500/payment/fail/${main_tran}`,
+      success_url: `${process.env.BACKEND_URL}/payment/success/${main_tran}`,
+      fail_url: `${process.env.BACKEND_URL}/payment/fail/${main_tran}`,
+      cancel_url: `${process.env.BACKEND_URL}/payment/fail/${main_tran}`,
       ipn_url: "http://localhost:3030/ipn",
       shipping_method: "Courier",
       product_name: "Computer.",
@@ -132,7 +133,6 @@ async function main() {
       }
 
       const result = await Order.create(finalOrder)
-      console.log("Redirecting to: ", GatewayPageURL)
     })
 
     app.post("/payment/success/:tranId", async (req, res) => {
@@ -147,20 +147,23 @@ async function main() {
           },
         }
       )
-      res.redirect(`http://localhost:5173/payment/success/${tranId}`)
+      res.redirect(`${process.env.FRONTEND_URL}/payment/success/${tranId}`)
     })
     app.post("/payment/fail/:tranId", async (req, res) => {
+      console.log("payment failed", req.params.tranId)
       const tranId = req?.params?.tranId
       const result = await Order.deleteOne({
         tranId,
       })
-      res.redirect(`http://localhost:5173/payment/fail/${tranId}`)
+      res.redirect(`${process.env.FRONTEND_URL}/payment/fail/${tranId}`)
     })
   })
 
   // get order details
   app.get("/order", async (req, res) => {
-    const allOrder = await Order.find({})
+    const allOrder = await Order.find({}).sort({
+      updatedAt: -1,
+    })
     res.json({
       success: true,
       message: "order details",
