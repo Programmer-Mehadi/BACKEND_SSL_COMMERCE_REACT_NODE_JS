@@ -1,0 +1,116 @@
+[
+  {
+    "name": "Lite",
+    "price": 29,
+    "durationType": "monthly",
+    "description": "A basic subscription plan billed monthly.",
+    "features": [
+      { "text": "Unlimited Bandwidth", "isAvailable": true },
+      { "text": "24/7 Customer Support", "isAvailable": true },
+      { "text": "Access to all servers", "isAvailable": true },
+      { "text": "High-Speed Servers", "isAvailable": true },
+      { "text": "Ad-Free Experience", "isAvailable": true },
+      { "text": "Priority Customer Support", "isAvailable": false },
+      { "text": "Multi-device Support", "isAvailable": false },
+      { "text": "Dedicated Support Representative", "isAvailable": false },
+      { "text": "Custom Server Configuration", "isAvailable": false },
+      { "text": "Advanced Security Features", "isAvailable": false },
+      { "text": "Monthly Usage Reports", "isAvailable": false }
+    ]
+  },
+  {
+    "name": "Plus",
+    "price": 89,
+    "durationType": "monthly",
+    "description": "A medium subscription plan billed monthly.",
+    "features": [
+      { "text": "Unlimited Bandwidth", "isAvailable": true },
+      { "text": "24/7 Customer Support", "isAvailable": true },
+      { "text": "Access to all servers", "isAvailable": true },
+      { "text": "High-Speed Servers", "isAvailable": true },
+      { "text": "Ad-Free Experience", "isAvailable": true },
+      { "text": "Priority Customer Support", "isAvailable": true },
+      { "text": "Multi-device Support", "isAvailable": true },
+      { "text": "Dedicated Support Representative", "isAvailable": true },
+      { "text": "Custom Server Configuration", "isAvailable": false },
+      { "text": "Advanced Security Features", "isAvailable": false },
+      { "text": "Monthly Usage Reports", "isAvailable": false }
+    ]
+  },
+  {
+    "name": "Enterprise",
+    "price": 159,
+    "durationType": "monthly",
+    "description": "A premium subscription plan billed monthly.",
+    "features": [
+      { "text": "Unlimited Bandwidth", "isAvailable": true },
+      { "text": "24/7 Customer Support", "isAvailable": true },
+      { "text": "Access to all servers", "isAvailable": true },
+      { "text": "High-Speed Servers", "isAvailable": true },
+      { "text": "Ad-Free Experience", "isAvailable": true },
+      { "text": "Priority Customer Support", "isAvailable": true },
+      { "text": "Multi-device Support", "isAvailable": true },
+      { "text": "Dedicated Support Representative", "isAvailable": true },
+      { "text": "Custom Server Configuration", "isAvailable": true },
+      { "text": "Advanced Security Features", "isAvailable": true },
+      { "text": "Monthly Usage Reports", "isAvailable": true }
+    ]
+  },
+  {
+    "name": "Lite",
+    "price": 239,
+    "durationType": "yearly",
+    "description": "A basic subscription plan billed yearly.",
+    "features": [
+      { "text": "Unlimited Bandwidth", "isAvailable": true },
+      { "text": "24/7 Customer Support", "isAvailable": true },
+      { "text": "Access to all servers", "isAvailable": true },
+      { "text": "High-Speed Servers", "isAvailable": true },
+      { "text": "Ad-Free Experience", "isAvailable": true },
+      { "text": "Priority Customer Support", "isAvailable": true },
+      { "text": "Multi-device Support", "isAvailable": true },
+      { "text": "Dedicated Support Representative", "isAvailable": true },
+      { "text": "Custom Server Configuration", "isAvailable": false },
+      { "text": "Advanced Security Features", "isAvailable": false },
+      { "text": "Monthly Usage Reports", "isAvailable": false }
+    ]
+  },
+  {
+    "name": "Plus",
+    "price": 789,
+    "durationType": "yearly",
+    "description": "A medium subscription plan billed yearly.",
+    "features": [
+      { "text": "Unlimited Bandwidth", "isAvailable": true },
+      { "text": "24/7 Customer Support", "isAvailable": true },
+      { "text": "Access to all servers", "isAvailable": true },
+      { "text": "High-Speed Servers", "isAvailable": true },
+      { "text": "Ad-Free Experience", "isAvailable": true },
+      { "text": "Priority Customer Support", "isAvailable": false },
+      { "text": "Multi-device Support", "isAvailable": false },
+      { "text": "Dedicated Support Representative", "isAvailable": false },
+      { "text": "Custom Server Configuration", "isAvailable": false },
+      { "text": "Advanced Security Features", "isAvailable": false },
+      { "text": "Monthly Usage Reports", "isAvailable": false }
+    ]
+  },
+  {
+    "name": "Enterprise",
+    "price": 1759,
+    "durationType": "yearly",
+    "description": "A premium subscription plan billed yearly.",
+    "features": [
+      { "text": "Unlimited Bandwidth", "isAvailable": true },
+      { "text": "24/7 Customer Support", "isAvailable": true },
+      { "text": "Access to all servers", "isAvailable": true },
+      { "text": "High-Speed Servers", "isAvailable": true },
+      { "text": "Ad-Free Experience", "isAvailable": true },
+      { "text": "Priority Customer Support", "isAvailable": true },
+      { "text": "Multi-device Support", "isAvailable": true },
+      { "text": "Dedicated Support Representative", "isAvailable": true },
+      { "text": "Custom Server Configuration", "isAvailable": true },
+      { "text": "Advanced Security Features", "isAvailable": true },
+      { "text": "Monthly Usage Reports", "isAvailable": true }
+    ]
+  }
+]
